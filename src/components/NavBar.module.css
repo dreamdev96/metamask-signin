@@ -1,0 +1,17 @@
+.navbar {
+  background: #000;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
