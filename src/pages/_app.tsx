@@ -8,7 +8,7 @@ import store from "@/app/store";
 const host =
   process.env.NEXT_PUBLIC_ENV === "DEV"
     ? "http://localhost:3000/"
-    : "https://clever-gelato-42d3cd.netlify.app/";
+    : "https://metamask-sign-in.vercel.app/";
 
 const sdkOptions = {
   logging: { developerMode: true },
