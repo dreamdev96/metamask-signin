@@ -5,9 +5,10 @@ import Modals from "@/components/Modals";
 import { ToastContainer } from "react-toastify";
 
 export default function Home() {
-  const audioRef = useRef(typeof Audio !== "undefined" && new Audio());
+  const audioRef = useRef(
+    typeof Audio !== "undefined" && new Audio("/click-sound.mp3")
+  );
   useEffect(() => {
-    audioRef.current = new Audio("/click-sound.mp3");
     document.body.addEventListener("click", (event: MouseEvent) => {
       const target = event.target as HTMLButtonElement;
       const audio = audioRef.current as HTMLAudioElement;
