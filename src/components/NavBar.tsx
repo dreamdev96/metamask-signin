@@ -37,7 +37,7 @@ export const NavBar = () => {
       {signatureData.signed ? (
         <div className={styles.account}>
           <h1>
-            You're{" "}
+            You&apos;re{" "}
             {signatureData.type === "sign-up" ? "signed up" : "signed in"}!
           </h1>
           <p></p>
