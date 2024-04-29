@@ -12,8 +12,7 @@ import styles from "./NavBar.module.css";
 export const NavBar = () => {
   const dispatch = useAppDispatch();
   const signatureData = useAppSelector(selectSignature);
-  const { sdk, connected, account } = useSDK();
-  console.log({ connected, account });
+  const { sdk, account } = useSDK();
 
   useEffect(() => {
     if (signatureData.signature) {
@@ -40,7 +39,6 @@ export const NavBar = () => {
             You&apos;re{" "}
             {signatureData.type === "sign-up" ? "signed up" : "signed in"}!
           </h1>
-          <p></p>
           {signatureData.signature && (
             <p>Signature: ${signatureData.signature}</p>
           )}

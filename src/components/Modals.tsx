@@ -13,11 +13,7 @@ const Modals = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    if (modal.name) {
-      setIsOpen(true);
-    } else {
-      setIsOpen(false);
-    }
+    setIsOpen(Boolean(modal.name));
   }, [modal.name]);
 
   const onClose = () => dispatch(setModal(null));
