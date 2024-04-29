@@ -6,7 +6,9 @@ import { MetaMaskProvider } from "@metamask/sdk-react";
 import store from "@/app/store";
 
 const host =
-  process.env.NEXT_PUBLIC_ENV === "DEV" ? "http://localhost:3000/" : "realHost";
+  process.env.NEXT_PUBLIC_ENV === "DEV"
+    ? "http://localhost:3000/"
+    : "https://clever-gelato-42d3cd.netlify.app/";
 
 const sdkOptions = {
   logging: { developerMode: true },
